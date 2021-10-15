@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: whitesmoke;
+}
+
+ :root {
+    --first: #2f2e3e;
+    --second: #39384a;
+    --third: #47485d;
+    --shadow: #242430;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--first);
+}
+
+.container {
+    padding: 1rem;
+    max-width: 1200px;
+    background-color: var(--second);
+    min-height: 92vh;
+    width: 100vw;
+    box-shadow: var(--shadow) 0 0 10px 1px;
+}
+
+header {
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    padding: 2vw;
+    box-shadow: var(--shadow) 0 0 10px 1px;
+    background-color: var(--second);
+    z-index: 1000;
+}
+
+footer {
+    width: 100vw;
+    height: 1vh;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2vw;
+    box-shadow: var(--shadow) 0 0 10px 1px;
+    background-color: var(--second);
+    z-index: 1000;
+}
+
+h1 {
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: var(--shadow) .25rem .25rem;
+    ;
+    margin-left: 40vw;
+}
+
+input {
+    background: var(--third);
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-shadow: var(--shadow) .1rem .1rem;
+    padding: .2rem 1rem;
+    border: none;
+    box-shadow: var(--shadow) 0 0 .4rem .1rem;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+input:hover {
+    transform: scale(0.98);
+}
+
+.input-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-div-span {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.art-cont {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.roman {
+    font-family: 'Times New Roman', Times, serif;
+}
